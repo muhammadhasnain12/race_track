@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-screen-2xl  justify-between mx-auto p-4;
+  }
+
+  .heading {
+    @apply text-[44px] leading-[54px] font-[700] text-headingColor;
+  }
+
+  .text__para {
+    @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+  }
+  .btn {
+    @apply bg-[#C33366] py-[10px] px-[35px] rounded-[5px] text-white font-[500] mt-[38px];
+  }
+  .race_track__btn{
+    @apply bg-[#FFEDE5]
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    @apply w-full;
+  }
+  .section {
+    @apply py-[35px];
+  }
+}
